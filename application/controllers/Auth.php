@@ -23,14 +23,92 @@ class Auth extends CI_Controller
 
   public function contactus()
   {
-    $data['title'] = 'Rms Logistic';
-    $data['phone'] = '+(62) 21 801 5966';
-    $data['mail'] = 'ridho@ridhologistics.com';
-    $data['copyright'] = 'Ridho Makmur Sentosa Logistics';
-    $data['addres'] = 'JL. Cililitan Besar No. 83 Kramat Jati – Jakarta Timur 13640 Indonesia';
-    $this->load->view('templates/index_header', $data);
-    $this->load->view('auth/contactus');
-    $this->load->view('templates/index_footer', $data);
+    $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+
+    if ($this->form_validation->run() == false) {
+      $data['title'] = 'Rms Logistic';
+      $data['phone'] = '+(62) 21 801 5966';
+      $data['mail'] = 'ridho@ridhologistics.com';
+      $data['copyright'] = 'Ridho Makmur Sentosa Logistics';
+      $data['addres'] = 'JL. Cililitan Besar No. 83 Kramat Jati – Jakarta Timur 13640 Indonesia';
+      $this->load->view('templates/index_header', $data);
+      $this->load->view('auth/contactus');
+      $this->load->view('templates/index_footer', $data);
+    } else {
+      $email = $this->input->post('email', true);
+      $data = [
+        'massage' => htmlspecialchars($this->input->post('massage', true)),
+        'name' => htmlspecialchars($this->input->post('name', true)),
+        'email' => htmlspecialchars('email'),
+        'subject' => htmlspecialchars($this->input->post('subject', true)),
+        'date_created' => time()
+      ];
+
+      //siapkan token
+      $token = base64_encode(random_bytes(32));
+      $testi_token = [
+        'email' => $email,
+        'token' => $token,
+        'date_created' => time()
+      ];
+
+      $this->db->insert('testi_customer', $data);
+      $this->db->insert('testi_token', $testi_token);
+
+      $this->__sendEmail($token, 'touch');
+      $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Thanks for get touch</div>');
+      redirect('auth/contactus');
+    }
+  }
+  private function __sendEmail($token, $type)
+  {
+    $config = [
+      'protocol'  => 'smtp',
+      'smtp_host' => 'ssl://smtp.googlemail.com',
+      'smtp_user' => 'gerry.radityaky@gmail.com',
+      'smtp_pass' => '091013gs',
+      'smtp_port' => 465,
+      'mailtype'  => 'html',
+      'charset'   => 'utf-8',
+      'newline'   => "\r\n"
+    ];
+
+    $this->email->initialize($config);
+
+    $this->email->from('gerry.radityaky@gmail.com', 'Gerry Raditya');
+    $this->email->to($this->input->post('email'));
+
+    if ($type == 'touch') {
+      $this->email->subject('Get In Touch');
+      $this->email->message('Thanks For Get in Touch : <a href="' . base_url() . 'auth' . $this->input->post('email') . '&token=' . urlencode($token) . '">Back To Ridhologistics</a>');
+    }
+    if ($this->email->send()) {
+      return true;
+    }
+  }
+
+  public function touch()
+  {
+    $email = $this->input->get('email');
+    $token = $this->input->get('token');
+
+    $testi_token = $this->db->get_where('testi_token', ['token' => $token])->row_array();
+
+    if ($testi_token) {
+      if (time() - $testi_token['date_created'] < (60 * 60 * 24)) {
+        $this->db->set('is_active', 1);
+        $this->db->where('email', $email);
+        $this->db->update('user');
+
+        $this->db->delete('testi_token', ['email' => $email]);
+
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">' . $email . ' thank for get in touch</div>');
+        redirect('auth');
+      } else {
+        $this->db->delete('user', ['email' => $email]);
+        $this->db->delete('testi_token', ['email' => $email]);
+      }
+    }
   }
 
   public function service_details()
