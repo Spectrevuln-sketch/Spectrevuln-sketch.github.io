@@ -10,6 +10,7 @@
           </div>
           <h2 class="text-center font-weight-normal pr-4">Login</h2>
         </div>
+        <?= $this->session->flashdata('message'); ?>
         <div class="card-body">
           <form class="user" method="post" action="<?= base_url('auth'); ?>">
             <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Email</label>

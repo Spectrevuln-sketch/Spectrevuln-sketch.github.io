@@ -23,6 +23,10 @@ class Auth extends CI_Controller
 
   public function contactus()
   {
+    if ($this->session->userdata('email')) {
+      redirect('auth');
+    }
+
     $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
     if ($this->form_validation->run() == false) {
@@ -87,30 +91,6 @@ class Auth extends CI_Controller
     }
   }
 
-  public function touch()
-  {
-    $email = $this->input->get('email');
-    $token = $this->input->get('token');
-
-    $testi_token = $this->db->get_where('testi_token', ['token' => $token])->row_array();
-
-    if ($testi_token) {
-      if (time() - $testi_token['date_created'] < (60 * 60 * 24)) {
-        $this->db->set('is_active', 1);
-        $this->db->where('email', $email);
-        $this->db->update('user');
-
-        $this->db->delete('testi_token', ['email' => $email]);
-
-        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">' . $email . ' thank for get in touch</div>');
-        redirect('auth');
-      } else {
-        $this->db->delete('user', ['email' => $email]);
-        $this->db->delete('testi_token', ['email' => $email]);
-      }
-    }
-  }
-
   public function service_details()
   {
     $data['title'] = 'Rms Logistic';
@@ -150,7 +130,7 @@ class Auth extends CI_Controller
 
     $this->form_validation->set_rules('name', 'Name', 'required|trim');
     $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
-    $this->form_validation->set_rules('password1', 'Password1', 'required|trim|min_leng[3]|matches[password2]', [
+    $this->form_validation->set_rules('password1', 'Password1', 'required|trim|min_leng[8]|matches[password2]', [
       'min_leng' => 'password too short!',
       'matches' => 'password dont match!'
     ]);
@@ -172,12 +152,13 @@ class Auth extends CI_Controller
         'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
         'image' => 'default.jpg',
         'role_id' => 3,
-        'is_active' => 1,
+        'is_active' => 0,
         'date_created' => time()
       ];
 
       $this->db->insert('user', $data);
       $this->session->set_flashdata('massage', '<div class="alert alert-success" role="alert">Congratulation! your account has been created. please login</div>');
+      redirect('auth/login');
     }
   }
 }

@@ -9,7 +9,7 @@
           </div>
           <h3 class="text-center font-weight-normal pr-4">Create Account</h3>
           <div class="card-body">
-            <form class="user" method="post" action="<?= base_url('auth/registration'); ?>">
+            <form class="user" method="post" action="<?= base_url('auth/login'); ?>">
               <div class="form-group">
                 <label class="small mb-1">Name</label>
                 <input type="text" class="form-control from-control-user py-4" id="name" name="name" placeholder="Full Name" value="<?= set_value('name'); ?>">
@@ -17,7 +17,7 @@
               </div>
               <div class="form-group">
                 <label class="small mb-1">Email</label>
-                <input type="text" class="form-control from-control-user py-4" id="email" type="text" name="email" placeholder="Email address" value="<?= set_value('name'); ?>">
+                <input type="text" class="form-control from-control-user py-4" id="email" type="text" name="email" placeholder="Email address" value="<?= set_value('email'); ?>">
                 <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
               </div>
               <div class="form-row">
@@ -30,7 +30,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label class="small mb-1">Repeat Password</label>
-                    <input class="form-control form-control-user text-muted py-4" id="inputConfirmPassword" type="text" name="password2" placeholder="Repeat password" aria-describedby="passwordHelpInline" /></div>
+                    <input class="form-control form-control-user text-muted py-4" id="password2" type="text" name="password2" placeholder="Repeat password" aria-describedby="passwordHelpInline" /></div>
                   <?= form_error('password2', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
               </div>
