@@ -38,56 +38,6 @@ class Auth extends CI_Controller
       $this->load->view('templates/index_header', $data);
       $this->load->view('auth/contactus');
       $this->load->view('templates/index_footer', $data);
-    } else {
-      $email = $this->input->post('email', true);
-      $data = [
-        'massage' => htmlspecialchars($this->input->post('massage', true)),
-        'name' => htmlspecialchars($this->input->post('name', true)),
-        'email' => htmlspecialchars('email'),
-        'subject' => htmlspecialchars($this->input->post('subject', true)),
-        'date_created' => time()
-      ];
-
-      //siapkan token
-      $token = base64_encode(random_bytes(32));
-      $testi_token = [
-        'email' => $email,
-        'token' => $token,
-        'date_created' => time()
-      ];
-
-      $this->db->insert('testi_customer', $data);
-      $this->db->insert('testi_token', $testi_token);
-
-      $this->__sendEmail($token, 'touch');
-      $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Thanks for get touch</div>');
-      redirect('auth/contactus');
-    }
-  }
-  private function __sendEmail($token, $type)
-  {
-    $config = [
-      'protocol'  => 'smtp',
-      'smtp_host' => 'ssl://smtp.googlemail.com',
-      'smtp_user' => 'gerry.radityaky@gmail.com',
-      'smtp_pass' => '091013gs',
-      'smtp_port' => 465,
-      'mailtype'  => 'html',
-      'charset'   => 'utf-8',
-      'newline'   => "\r\n"
-    ];
-
-    $this->email->initialize($config);
-
-    $this->email->from('gerry.radityaky@gmail.com', 'Gerry Raditya');
-    $this->email->to($this->input->post('email'));
-
-    if ($type == 'touch') {
-      $this->email->subject('Get In Touch');
-      $this->email->message('Thanks For Get in Touch : <a href="' . base_url() . 'auth' . $this->input->post('email') . '&token=' . urlencode($token) . '">Back To Ridhologistics</a>');
-    }
-    if ($this->email->send()) {
-      return true;
     }
   }
 
@@ -129,14 +79,14 @@ class Auth extends CI_Controller
     }
 
     $this->form_validation->set_rules('name', 'Name', 'required|trim');
-    $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
-    $this->form_validation->set_rules('password1', 'Password1', 'required|trim|min_leng[8]|matches[password2]', [
-      'min_leng' => 'password too short!',
-      'matches' => 'password dont match!'
+    $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
+      'is_unique' => 'This Email Is Already Registerd!'
     ]);
-    $this->form_validation->set_rules('password2', 'Password2', 'required|trim|matches[password1]', [
-      'matches' => 'password dont match!'
+    $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[3]|matches[password2]', [
+      'matches' => 'password dont match!',
+      'min_length' => 'password too short!'
     ]);
+    $this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
 
     if ($this->form_validation->run() == false) {
       $data['logintitle'] = 'Rms Logistic | Login';
@@ -151,12 +101,13 @@ class Auth extends CI_Controller
         'email' => htmlspecialchars($email),
         'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
         'image' => 'default.jpg',
-        'role_id' => 3,
-        'is_active' => 0,
+        'role_id' => 2,
+        'is_active' => 1,
         'date_created' => time()
       ];
 
       $this->db->insert('user', $data);
+
       $this->session->set_flashdata('massage', '<div class="alert alert-success" role="alert">Congratulation! your account has been created. please login</div>');
       redirect('auth/login');
     }

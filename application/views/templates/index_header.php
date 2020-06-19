@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- <link rel="manifest" href="site.webmanifest"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets'); ?>img/logo-rms.png">
+  <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/'); ?>img/logo-rms.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- CSS here -->
@@ -50,8 +50,8 @@
               <div class="header_right d-flex align-items-center">
                 <div class="short_contact_list">
                   <ul>
-                    <li><a href="<?= base_url('assets/'); ?>#"> <i class="fa fa-envelope"></i> <?= $mail; ?></a></li>
-                    <li><a href="<?= base_url('assets/'); ?>#"> <i class="fa fa-phone"></i> <?= $phone; ?></a></li>
+                    <li><a href="#"> <i class="fa fa-envelope"></i> <?= $mail; ?></a></li>
+                    <li><a href="#"> <i class="fa fa-phone"></i> <?= $phone; ?></a></li>
                   </ul>
                 </div>
                 <div id="sticky-header" class="btn book_btn d-none d-lg-block main-header-area">
