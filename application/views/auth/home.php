@@ -11,16 +11,17 @@
         <div class="col-xl-6 col-lg-6 col-md-6">
           <div class="features_info">
             <h3>Why Choose Us?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            <p>PT. RIDHO MAKMUR SENTOSA hadir untuk menjawab harapan para pengguna jasa Industri Logistics yang dari waktu ke waktu semakin berkembang; serta memberikan solusi bagi permasalahan yang dihadapinya.
+              Dengan motto ”SERVICE IS QUALITY” kami berkomitmen untuk senantiasa memberikan pelayanan dengan kualitas yang baik dan semakin baik.
+              Kami berbahagia dan bangga berkesempatan untuk melayani serta menjadi mitra usaha Anda.
             </p>
             <ul>
               <li> Apartments frequently or motionless. </li>
               <li> Duis aute irure dolor in reprehenderit in voluptate. </li>
               <li> Voluptatem quia voluptas sit aspernatur.</li>
             </ul>
-
             <div class="about_btn">
-              <a class="boxed-btn3-line" href="<?= base_url('auth/contactus'); ?>">Contact Us</a>
+              <a class="boxed-btn3-line btn-lg" href="<?= base_url('auth/contactus'); ?>">Contact Us</a>
             </div>
           </div>
         </div>
@@ -53,7 +54,7 @@
   </div>
 </div>
 <!-- /contact_action_area  -->
-
+<!-- taransport_area -->
 <div class="transportaion_area">
   <div class="container">
     <div class="row">
@@ -90,6 +91,7 @@
     </div>
   </div>
 </div>
+<!-- \taransport_area -->
 <!-- testimonial_area  -->
 <div class="testimonial_area">
   <div class="container">

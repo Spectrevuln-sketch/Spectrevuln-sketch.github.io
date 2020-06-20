@@ -2455,10 +2455,10 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_contact_action.scss */
 .contact_action_area {
-  background-image: url(../img/banner/contact_bg.png);
+  background-image: url(assets/img/banner/contact_bg.png);
   position: relative;
   z-index: 0;
-  padding: 138px 0;
+  padding: 122px 0 122px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2566,7 +2566,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 62, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_contact_action.scss */
   .contact_action_area .call_add_action span {
-    margin: 20px 0;
+    margin: 50px 0;
     display: block;
   }
 }
