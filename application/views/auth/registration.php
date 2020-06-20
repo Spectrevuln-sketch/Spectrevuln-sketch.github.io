@@ -24,13 +24,16 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label class="small mb-1">Password</label>
-                    <input type="password" class="form-control form-control-user text-muted py-4" id="password1" name="password1" placeholder="Enter password"></div>
+                    <input type="password" class="form-control form-control-user py-4" id="password1" name="password1" placeholder="Enter password">
+                    <span class="input-group-text"><i class="fa fa-eye"></i></span></div>
                   <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label class="small mb-1">Repeat Password</label>
-                    <input type="password" class="form-control form-control-user text-muted py-4" id="password2" name="password2" placeholder="Repeat password"></div>
+                    <input type="password" class="form-control form-control-user py-4" id="password2" name="password2" placeholder="Repeat password">
+                    <span class="input-group-text"><i class="fa fa-eye"></i></span>
+                  </div>
                   <?= form_error('password2', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
               </div>

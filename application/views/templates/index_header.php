@@ -55,7 +55,7 @@
                   </ul>
                 </div>
                 <div id="sticky-header" class="btn book_btn d-none d-lg-block main-header-area">
-                  <a class="boxed-btn3-line" href="<?= base_url('auth/registration'); ?>">Sign up!</a>
+                  <!-- <a class="boxed-btn3-line" href="<?= base_url('auth/registration'); ?>">Sign up!</a> -->
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@
                 <div class="main-menu d-none d-lg-block">
                   <nav>
                     <ul id="navigation">
-                      <li><a class="btn book_btn boxed-btn3-line btn-sm" href="<?= base_url('auth/login'); ?>">Login</a></li>
+                      <!-- <li><a class="btn book_btn boxed-btn3-line btn-sm" href="<?= base_url('auth/login'); ?>">Login</a></li> -->
                       <li><a href="<?= base_url('/'); ?>">home</a></li>
                       <li><a href="#">Service <i class="ti-angle-down"></i></a>
                         <ul class="submenu">
