@@ -82,7 +82,7 @@
             <div class="download_brochure d-flex align-items-center justify-content-between">
               <div class="download_left d-flex align-items-center">
                 <div class="icon">
-                  <img src="img/svg_icon/download.svg" alt="">
+                  <img src="<?= base_url('assets/'); ?>img/svg_icon/download.svg" alt="">
                 </div>
                 <div class="download_text">
                   <h3>Download Our Brochure</h3>
@@ -90,7 +90,7 @@
                 </div>
               </div>
               <div class="download_right">
-                <a class="boxed-btn3-line" href="#">Download Now</a>
+                <a class="boxed-btn3-line" href="<?= base_url('auth/do_download'); ?>">Download Now</a>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@
                 </div>
               </div>
               <div class="download_right">
-                <a class="boxed-btn3-line" href="#">Download Now</a>
+                <a class="boxed-btn3-line" href="<?= base_url('auth/do_download'); ?>">Download Now</a>
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@
                 </div>
               </div>
               <div class="download_right">
-                <a class="boxed-btn3-line" href="#">Download Now</a>
+                <a class="boxed-btn3-line" href="<?= base_url('auth/do_download'); ?>">Download Now</a>
               </div>
             </div>
           </div>
@@ -256,40 +256,3 @@
   </div>
 </div>
 <!-- service_details_start  -->
-<!-- contact_location  -->
-<div class="contact_location">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6">
-        <div class="location_left">
-          <div class="logo">
-            <a href="index.html">
-              <img src="img/logo.png" alt="">
-            </a>
-          </div>
-          <ul>
-            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-3">
-        <div class="single_location">
-          <h3> <img src="<?= base_url('assets/'); ?>img/icon/address.svg" alt="Responsive image"> Location</h3>
-          <p><?= $addres; ?></p>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-3">
-        <div class="single_location">
-          <h3> <img src="<?= base_url('assets/'); ?>img/icon/support.svg" alt="Responsive image"> Contact</h3>
-          <p><?= $phone; ?> <br>
-            <?= $mail; ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--/ contact_location  -->

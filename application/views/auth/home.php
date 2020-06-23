@@ -149,38 +149,3 @@
   </div>
 </div>
 <!-- /testimonial_area  -->
-
-<!-- contact_location  -->
-<div class="contact_location">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6">
-        <div class="location_left">
-          <div class="logo">
-            <a href="index.html">
-              <img src="<?= base_url('assets/'); ?>img/logo-rms.png" alt="">
-            </a>
-          </div>
-          <ul>
-            <li><a href="#"><i class="fas fa-envelope" style="background color: ;"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-3">
-        <div class="single_location">
-          <h3> <img src="<?= base_url('assets/'); ?>img/icon/address.svg" alt=""> Location</h3>
-          <p><?= $addres; ?></p>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-3">
-        <div class="single_location">
-          <h3> <img src="<?= base_url('assets/'); ?>img/icon/support.svg" alt=""> Location</h3>
-          <p><?= $phone; ?> <br>
-            <?= $mail; ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--/ contact_location  -->

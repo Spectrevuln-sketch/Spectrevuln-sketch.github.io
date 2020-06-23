@@ -8,10 +8,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <!-- favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/'); ?>img/logo-rms.png">
-  <!-- Place favicon.ico in the root directory -->
-
+  <!--/ favicon -->
   <!-- CSS here -->
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/owl.carousel.min.css">
@@ -46,8 +45,8 @@
               <div class="header_right d-flex align-items-center">
                 <div class="short_contact_list">
                   <ul>
-                    <li><a href="#"> <i class="fa fa-envelope"></i> <?= $mail; ?></a></li>
-                    <li><a href="#"> <i class="fa fa-phone"></i> <?= $phone; ?></a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i><?= $mail; ?></a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i><?= $phone; ?></a></li>
                   </ul>
                 </div>
                 <div id="sticky-header" class="btn book_btn d-none d-lg-block main-header-area">

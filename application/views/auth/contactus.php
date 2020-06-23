@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/slicknav.css">
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/style.css">
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/responsive.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -45,6 +46,11 @@
         <div class="d-none d-lg-block">
           <div class="row align-items-center">
             <div class="col-xl-4 col-lg">
+              <div class="single_location">
+                <ul>
+                  <li>
+                    <h2>Our Location<i class="fas fa-crosshairs fa-fw" style='font-size:30px;color:red'></i></h2>
+              </div>
               <div class="map">
                 <a href="https://www.google.com/maps/place/Ridho+Makmur+Sentosa/@-6.2638915,106.8664598,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f2f905759b77:0x5fd8b49fcca9f5dd!8m2!3d-6.2638968!4d106.8686485">
                   <span class="border border-secondary rounded">
@@ -59,8 +65,12 @@
         <hr>
         <div class="row align-items-center">
           <div class="col-12 my-5">
-            <h2 class="contact-title">Get in Touch</h2>
             <?= $this->session->flashdata('touch'); ?>
+            <div class="single_touch">
+              <ul>
+                <li>
+                  <h2>Get In Touch!<i class="far fa-paper-plane fa-fw" style='font-size:30px;color:red'></i></h2>
+            </div>
           </div>
           <div class="col-lg-8">
             <form class="form-contact contact_form" action="<?= base_url('auth/contactus'); ?>" method="post" id="contact">
@@ -110,7 +120,7 @@
               <span class="contact-info__icon"><i class="ti-email"></i></span>
               <div class="media-body">
                 <h3><?= $mail; ?></h3>
-                <p>Send us your query anytime!</p>
+                <p>Send us your mail anytime!</p>
               </div>
             </div>
           </div>
