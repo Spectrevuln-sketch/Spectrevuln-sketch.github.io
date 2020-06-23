@@ -17,26 +17,17 @@
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div class="service_details_info">
               <h3>Service details</h3>
-              <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or
-                picture
-                placing drawing. Apartments frequently or motionless on reasonable sed do
-                eiusmod tempor
-                inciunt ut labore et dolore magna liqua.abore et dolore incididunt ut labore et
-                dolore.
+              <p>Belum meratanya kemampuan untuk memenuhi kebutuhan dari sumber daya yang ada diwilayahnya masing-masing mengakibatkan saling membutuhkan dan bahkan ketergantungan
+                akan barang dan jasa antar wilayah di Negara Indonesia ini masih sangat tinggi, hal ini menjadikan arus
+                pengiriman barang dan jasa tumbuh, kondisi seperti ini mendorong pertumbuhan industri penyedia jasa layanan logistics tumbuh dengan baik.
               </p>
-              <p>Temper too say adieus who direct esteem. It esteems luckily or picture placing
-                drawing.
-                Apartments frequently or motionless on reasonable sed do eiusmod tempor inciunt
-                ut
-                labore et dolore magna liqua.abore et dolore incididunt ut labore et dolore.</p>
-              <p>Adieus who direct esteem. It esteems luckily or picture placing drawing.
-                Apartments
-                frequently or motionless on reasonable sed do eiusmod tempor inciunt ut labore
-                et dolore
-                magna liqua.abore et dolore incididunt ut labore et dolore.</p>
+              <p>Dengan jaringan di berbagai kota besar di seluruh wilayah Indonesia dengan dukungan sumber daya manusia yang berpengalaman serta sarana dan prasarana yang
+                memadai Ridho Logistics memiliki kemampuan memberikan pelayanan distribusi barang dalam rangka memenuhi kebutuhan Produsen dan Konsumen, Pengirim dan Penerima dengan kualitas
+                pelayanan yang baik berawal dari titik awal pengambilan hingga
+                titik akhir tujuan antar, dengan melalui sarana angkutan darat, laut, maupun udara sesuai dengan kebutuhan pelanggan; antar kota maupun antar pulau.</p>
             </div>
             <div class="service_thumb">
-              <img class="img-fluid" src="<?= base_url('assets/'); ?>img/service/service_details.png" alt="">
+              <img class="img-fluid" src="<?= base_url('assets/'); ?>img/service/ocean_transport.png" height="100" width="800" alt="">
             </div>
             <div class="accordion_area">
               <div class="faq_ask">
@@ -106,26 +97,14 @@
           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="service_details_info">
               <h3>Service details</h3>
-              <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or
-                picture
-                placing drawing. Apartments frequently or motionless on reasonable sed do
-                eiusmod tempor
-                inciunt ut labore et dolore magna liqua.abore et dolore incididunt ut labore et
-                dolore.
+              <p>Salah satu kehandalan utama Ridho Logistics adalah pelayanan distribusi barang melalui sarana angkutan darat, dengan menggunakan berbagai
+                jenis transportasi darat untuk kapasitas angkut dalam ukuran kecil hingga kapasitas angkut dalam ukuran besar, didukung dengan armada yang dimiliki serta kemampuan
+                pengelolaan managemen pengiriman yang baik; dengan tingkat ketepatan waktu sampai dan keselamatan barang kini Ridho Logistics mendapatkan kesempatan dan kepercayaan yang semakin tinggi dan dari
+                pelanggan yang terus bertambah.
               </p>
-              <p>Temper too say adieus who direct esteem. It esteems luckily or picture placing
-                drawing.
-                Apartments frequently or motionless on reasonable sed do eiusmod tempor inciunt
-                ut
-                labore et dolore magna liqua.abore et dolore incididunt ut labore et dolore.</p>
-              <p>Adieus who direct esteem. It esteems luckily or picture placing drawing.
-                Apartments
-                frequently or motionless on reasonable sed do eiusmod tempor inciunt ut labore
-                et dolore
-                magna liqua.abore et dolore incididunt ut labore et dolore.</p>
             </div>
             <div class="service_thumb">
-              <img class="img-fluid" src="img/service/service_details.png" alt="">
+              <img class="img-fluid" src="<?= base_url('assets/'); ?>img/service/service_landtransport.png" height="100" width="800" alt="">
             </div>
             <div class="accordion_area">
               <div class="faq_ask">
@@ -195,26 +174,16 @@
           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             <div class="service_details_info">
               <h3>Service details</h3>
-              <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or
-                picture
-                placing drawing. Apartments frequently or motionless on reasonable sed do
-                eiusmod tempor
-                inciunt ut labore et dolore magna liqua.abore et dolore incididunt ut labore et
-                dolore.
+              <p>Pada era modern seperti saat ini, perdagangan internasional / transaksi jual beli lintas negara adalah sebuah keniscayaan yang tidak lagi bisa dihindari,
+                yang karenanya menimbulkan arus pengiriman barang Ekspor dan Impor dalam jumlah yang sangat besar dari dan ke Indonesia terjadi pada setiap harinya; baik melalui jalur sarana angkutan laut,
+                angkutan udara dan bahkan ada pula yang melalui angkutan darat bagi perdagangan antar negara yang terjadi pada sekitar wilayah perbatasan.
               </p>
-              <p>Temper too say adieus who direct esteem. It esteems luckily or picture placing
-                drawing.
-                Apartments frequently or motionless on reasonable sed do eiusmod tempor inciunt
-                ut
-                labore et dolore magna liqua.abore et dolore incididunt ut labore et dolore.</p>
-              <p>Adieus who direct esteem. It esteems luckily or picture placing drawing.
-                Apartments
-                frequently or motionless on reasonable sed do eiusmod tempor inciunt ut labore
-                et dolore
-                magna liqua.abore et dolore incididunt ut labore et dolore.</p>
+              <p>Ridho Logistics dengan jaringan internasional yang luas dan didukung sumber daya manusia
+                yang profesional dapat memberikan pelayanan sesuai dengan kebutuhan pelanggan baik melalui jalur laut (FCL Service, LCL Service, Special Service)
+                maupun melalui jalur udara (Konvensional, ULD Hanging Garments, Special Service)</p>
             </div>
             <div class="service_thumb">
-              <img class="img-fluid" src="<?= base_url('assets/'); ?>img/service/service_details.png" alt="">
+              <img class="img-fluid" src="<?= base_url('assets/'); ?>img/service/3.png" height="100" width="800" alt="">
             </div>
             <div class="accordion_area">
               <div class="faq_ask">

@@ -7,21 +7,21 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" height="500" src="<?= base_url('assets/'); ?>img/banner/banner.png" alt="First slide">
+      <img class="d-block w-100" height="700" src="<?= base_url('assets/'); ?>img/banner/banner2.png" alt="First slide">
       <div class="carousel-caption">
         <h3 class="d-none d-md-block text-danger font-weight-bold">test blah</h3>
         <p>test blah</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" height="500" src="<?= base_url('assets/'); ?>img/banner/Estimate_bg.png" alt="Second slide">
+      <img class="d-block w-100" height="700" src="<?= base_url('assets/'); ?>img/banner/Estimate_bg2.png" alt="Second slide">
       <div class="carousel-caption">
         <h3 class="d-none d-md-block text-danger font-weight-bold">test blah</h3>
         <p>test blah</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" height="500" src="<?= base_url('assets/'); ?>img/banner/contact_bg.png" alt="Third slide">
+      <img class="d-block w-100" height="700" src="<?= base_url('assets/'); ?>img/banner/contact.png" alt="Third slide">
       <div class="carousel-caption">
         <h3 class="d-none d-md-block text-danger font-weight-bold">test blah</h3>
         <p>test blah</p>

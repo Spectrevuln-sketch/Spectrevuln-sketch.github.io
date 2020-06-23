@@ -31,18 +31,15 @@
 </div>
 <!--/ chose_area  -->
 
-<!-- counter_area  -->
-
-<!-- /counter_area  -->
 <!-- contact_action_area  -->
 <div class="contact_action_area">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-xl-7 col-md-6">
         <div class="action_heading">
-          <h3>100% secure and safe</h3>
-          <p>Esteem spirit temper too say adieus who direct esteem. It look estee luckily or picture
-            placing drawing.</p>
+          <h3>Visi</h3>
+          <p>Menjadi Penyedia Jasa Layanan Logistics dengan kualitas prima sebagai sarana untuk meningkatkan kesejahteraan perusahaan serta masyarakat yang dilayaninya.
+          </p>
         </div>
       </div>
       <div class="col-xl-5 col-md-6">
@@ -63,9 +60,9 @@
           <div class="icon">
             <img src="<?= base_url('assets/'); ?>img/svg_icon/airplane.png" alt="">
           </div>
-          <h3>Transportation</h3>
-          <p>Esteem spirit temper too say adieus who direct esteem. It look estee luckily or picture
-            placing drawing.</p>
+          <h3>Project Cargo Service</h3>
+          <p>Pada berbagai kesempatan Ridho Logistics juga telah berhasil menangani beberapa pengiriman barang dalam ukuran berat; volume dan quantitas yang sangat besar serta
+            memerlukan moda transportasi serta penanganan khusus karena tujuan titik antar yang sangat sulit dijangkau.</p>
         </div>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-6">
@@ -165,10 +162,7 @@
             </a>
           </div>
           <ul>
-            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
+            <li><a href="#"><i class="fas fa-envelope" style="background color: ;"></i></a></li>
           </ul>
         </div>
       </div>

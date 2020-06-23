@@ -24,17 +24,13 @@
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/animate.css">
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/slick.css">
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/slicknav.css">
+  <link rel="stylesheet" href="<?= base_url('assets/'); ?>fontawesome/css/all.css">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/style.css">
-  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-</head>
+  <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/responsive.css">
 
 <body>
-  <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
   <!-- header-start -->
   <header>
     <div class="header-area ">
@@ -55,7 +51,6 @@
                   </ul>
                 </div>
                 <div id="sticky-header" class="btn book_btn d-none d-lg-block main-header-area">
-                  <!-- <a class="boxed-btn3-line" href="<?= base_url('auth/registration'); ?>">Sign up!</a> -->
                 </div>
               </div>
             </div>
@@ -75,7 +70,6 @@
                 <div class="main-menu d-none d-lg-block">
                   <nav>
                     <ul id="navigation">
-                      <!-- <li><a class="btn book_btn boxed-btn3-line btn-sm" href="<?= base_url('auth/login'); ?>">Login</a></li> -->
                       <li><a href="<?= base_url('/'); ?>">home</a></li>
                       <li><a href="#">Service <i class="ti-angle-down"></i></a>
                         <ul class="submenu">
@@ -85,15 +79,6 @@
                       <li><a href="<?= base_url('auth/contactus'); ?>">Contact</a></li>
                     </ul>
                   </nav>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                <div class="Appointment justify-content-end">
-                  <div class="search_btn">
-                    <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
-                      <i class="ti-search"></i>
-                    </a>
-                  </div>
                 </div>
               </div>
               <div class="col-12">
