@@ -15,11 +15,6 @@
               Dengan motto ”SERVICE IS QUALITY” kami berkomitmen untuk senantiasa memberikan pelayanan dengan kualitas yang baik dan semakin baik.
               Kami berbahagia dan bangga berkesempatan untuk melayani serta menjadi mitra usaha Anda.
             </p>
-            <ul>
-              <li> Apartments frequently or motionless. </li>
-              <li> Duis aute irure dolor in reprehenderit in voluptate. </li>
-              <li> Voluptatem quia voluptas sit aspernatur.</li>
-            </ul>
             <div class="about_btn">
               <a class="boxed-btn3-line btn-lg" href="<?= base_url('auth/contactus'); ?>">Contact Us</a>
             </div>
@@ -55,7 +50,7 @@
 <div class="transportaion_area">
   <div class="container">
     <div class="row">
-      <div class="col-xl-4">
+      <div class="col-lg">
         <div class="single_transport">
           <div class="icon">
             <i class="fas fa-fw fa-shipping-fast" style="font-size:48px;color:red"></i>
@@ -65,7 +60,7 @@
             memerlukan moda transportasi serta penanganan khusus karena tujuan titik antar yang sangat sulit dijangkau.</p>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6">
+      <div class="col-lg">
         <div class="single_transport">
           <div class="icon">
             <i class="far fa-fw fa-compass" style="font-size:48px;color:red"></i>
@@ -75,7 +70,7 @@
             placing drawing.</p>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6">
+      <div class="col-lg">
         <div class="single_transport">
           <div class="icon">
             <i class="fas fa-fw fa-desktop" style="font-size:48px;color:red"></i>
