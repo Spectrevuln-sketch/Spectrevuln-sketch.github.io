@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://10.10.12.2/RMS';
+$config['base_url'] = 'https://192.168.100.66/RMS';
 
 /*
 |--------------------------------------------------------------------------

@@ -14,6 +14,7 @@ class Auth extends CI_Controller
     $this->load->view('templates/index_header', $data);
     $this->load->view('templates/slide_show', $data);
     $this->load->view('auth/home');
+    $this->load->view('templates/testi');
     $this->load->view('templates/index_footer', $data);
   }
 

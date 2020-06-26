@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-4">
-        <div class="service_details_left">
+        <div class="service_details_left" id="service">
           <h3>Services</h3>
           <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class=" active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Ocean Freight</a>
@@ -86,7 +86,6 @@
                 </div>
                 <div class="download_text">
                   <h3>Download Our Brochure</h3>
-                  <p>Esteem spirit temper too say adieus who direct.</p>
                 </div>
               </div>
               <div class="download_right">
@@ -163,7 +162,6 @@
                 </div>
                 <div class="download_text">
                   <h3>Download Our Brochure</h3>
-                  <p>Esteem spirit temper too say adieus who direct.</p>
                 </div>
               </div>
               <div class="download_right">
@@ -183,7 +181,7 @@
                 maupun melalui jalur udara (Konvensional, ULD Hanging Garments, Special Service)</p>
             </div>
             <div class="service_thumb">
-              <img class="img-fluid" src="<?= base_url('assets/'); ?>img/service/3.png" height="100" width="800" alt="">
+              <img class="img-fluid" src="<?= base_url('assets/'); ?>img/service/flight_kargo.png" height="100" width="800" alt="">
             </div>
             <div class="accordion_area">
               <div class="faq_ask">
@@ -242,7 +240,6 @@
                 </div>
                 <div class="download_text">
                   <h3>Download Our Brochure</h3>
-                  <p>Esteem spirit temper too say adieus who direct.</p>
                 </div>
               </div>
               <div class="download_right">
